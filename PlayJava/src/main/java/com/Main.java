@@ -1,4 +1,4 @@
-package com.company;
+package com;
 
 public class Main {
 
@@ -7,7 +7,7 @@ public class Main {
         Model model = new Model();
         View view = new View();
         Controller more_less = new Controller(model, view);
-        
-        more_less.application_run();
+
+        more_less.applicationRun();
     }
 }

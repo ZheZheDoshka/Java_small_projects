@@ -1,4 +1,4 @@
-package com.company;
+package com;
 
 public interface Constants {
     int range_from = 0;

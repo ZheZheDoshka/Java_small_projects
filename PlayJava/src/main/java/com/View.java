@@ -1,4 +1,4 @@
-package com.company;
+package com;
 
 public class View {
     public static final String MESSAGE_PREV_ATTEMPT = "Previous attempt: ";
@@ -24,7 +24,7 @@ public class View {
         message(RANGE+ range[0] + ";" + range[1] + ")");
     }
 
-    public void correct_answer(int attempt_num, String attempts){
+    public void correctAnswer(int attempt_num, String attempts){
         message(CORRECT_ANSWER);
         message(MESSAGE_ATTEMPTS + attempt_num);
         message(MESSAGE_ALL_ATTEMPTS + attempts.substring(2, attempts.length()));

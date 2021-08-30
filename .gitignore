@@ -1,6 +1,9 @@
 /scr/com/*
 !/**/src/com/company
 
+!/**/src/main/java/com
+!/**/src/test/java/com
+
 **/.idea
 *.iws
 *.iml

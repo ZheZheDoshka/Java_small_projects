@@ -1,4 +1,4 @@
-package com.company;
+package com;
 
 public class Model {
     public int searched_number;
@@ -27,24 +27,24 @@ public class Model {
         }
     }
 
-    public void set_range(int from,int to) {
+    public void setRange(int from,int to) {
         range[0] = from;
         range[1] = to;
     }
 
-    public void rand_initialise(){
+    public void randInitialise(){
         searched_number = range[0]+1 + (int) (Math.random() * (range[1]-range[0]));
     }
 
-    public int get_min_value() {
+    public int getMinValue() {
         return range[0];
     }
 
-    public int get_max_value() {
+    public int getMaxValue() {
         return range[1];
     }
 
-    public int[] get_range() {
+    public int[] getRange() {
         return range;
     }
 }

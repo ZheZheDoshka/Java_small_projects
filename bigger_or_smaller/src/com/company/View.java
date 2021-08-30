@@ -12,7 +12,7 @@ public class View {
             "NUMBER IS HIGHER THAN YOURS",
             "CORRECT NUMBER. WELL DONE"
     };
-    public static final String RANGE = "Range: [";
+    public static final String RANGE = "Range: (";
 
     public void message(String message){
         System.out.println(message);
@@ -21,7 +21,7 @@ public class View {
     public void statistics(int attempt_num, int[] range, int previous){
         message(MESSAGE_PREV_ATTEMPT + previous);
         message(MESSAGE_ATTEMPTS + attempt_num);
-        message(RANGE+ range[0] + "," + range[1] + "]");
+        message(RANGE+ range[0] + "," + range[1] + ")");
     }
 
     public void correct_answer(int attempt_num, String attempts){

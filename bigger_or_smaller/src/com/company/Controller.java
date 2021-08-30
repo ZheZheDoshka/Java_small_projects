@@ -12,19 +12,22 @@ public class Controller {
         this.view = view;
     }
 
-    public void application_run(){
+    public void initialize_model(Model model) {
+        model.set_range(Constants.range_from, Constants.range_to);
+        model.rand_initialise();
+    }
 
-            System.out.println(System.getProperty("java.home"));
+    public void application_run(){
         Scanner uInput = new Scanner(System.in);
         int userInput = 0;
         int result = 0;
-        model.rand_initialise();
+        initialize_model(model);
         boolean end_flag = true;
         view.message(View.GREETINGS);
         while(end_flag) {
             if (uInput.hasNextInt()) {
                 userInput = uInput.nextInt();
-                if ((userInput<model.range[0])||(userInput>model.range[1])) {
+                if ((userInput<model.get_min_value())||(userInput>model.get_max_value())) {
                     view.message(view.WRONG_INPUT);
                     }
                 else {
@@ -35,7 +38,7 @@ public class Controller {
                     }
                     else {
                         view.message(view.HIGHER_LOWER[result]);
-                        view.statistics(model.attempts, model.range, model.previous_attempt);
+                        view.statistics(model.attempts, model.get_range(), model.previous_attempt);
                     }
                 }
             }
@@ -44,6 +47,6 @@ public class Controller {
                 uInput.next();
             }
         }
-
     }
+
 }

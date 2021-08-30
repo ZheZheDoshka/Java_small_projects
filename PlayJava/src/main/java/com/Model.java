@@ -36,6 +36,10 @@ public class Model {
         searched_number = range[0]+1 + (int) (Math.random() * (range[1]-range[0]));
     }
 
+    public int getSearchedNumber(){
+        return searched_number;
+    }
+
     public int getMinValue() {
         return range[0];
     }

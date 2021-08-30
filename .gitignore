@@ -1,5 +1,6 @@
 /scr/com/*
 !/**/src/com/company
+**/target/
 
 !/**/src/main/java/com
 !/**/src/test/java/com

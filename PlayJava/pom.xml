@@ -14,18 +14,10 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <properties>
         <exec.mainClass>com.Main</exec.mainClass>
     </properties>
-
-
 
 </project>

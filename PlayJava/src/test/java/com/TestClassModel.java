@@ -28,6 +28,19 @@ public class TestClassModel {
             boolean in_range = ((randomNum>minRange)&&(randomNum<maxRange));
             Assert.assertTrue(in_range);
         }
+    }
 
+    @Test
+    void ModelLessMoreCheck(){
+        int checkModel = 0;
+        int checkedNum = model.getSearchedNumber();
+        int checkModel_Lower = model.higher_lower(checkedNum-2);
+        int checkModel_Higher = model.higher_lower(checkedNum+2);
+        checkModel = model.higher_lower(checkedNum);
+        Assert.assertEquals(1, checkModel_Lower);
+        Assert.assertEquals(0, checkModel_Higher);
+        Assert.assertEquals(2, checkModel);
+        Assert.assertEquals(checkedNum-2, model.getMinValue());
+        Assert.assertEquals(checkedNum+2, model.getMaxValue());
     }
 }

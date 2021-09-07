@@ -1,0 +1,14 @@
+output.greeting=Greetings!
+input.string.data=Input 
+input.first.name.data=first name using latin alphabet 
+input.surname.data=surname using latin alphabet 
+input.nickname.data=nickname using latin alphabet and numbers
+input.login.data=login using latin alphabet and numbers
+input.group.data=group in 2-letter - 2 numbers format (example: FI-84)
+input.home.number.data=home phone in format 044-***-**-** 
+input.first.mobile.number.data=mobile phone number 
+input.second.mobile.number.data=(optional) second mobile phone number 
+input.email.data=your email address 
+input.skype.data=your skype account
+input.address.data=your address WIP
+input.wrong.data=Wrong input!

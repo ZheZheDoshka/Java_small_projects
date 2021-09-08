@@ -3,7 +3,7 @@ package org.example.Model.entity;
 public class NoteBook {
     private String First_name;
     private String Surname;
-    private String Nickname;
+    private String Patronym;
     private String FIO;
     private String Login;
     private String Group;
@@ -80,12 +80,12 @@ public class NoteBook {
         Login = login;
     }
 
-    public String getPatronymic() {
-        return Nickname;
+    public String getPatronym() {
+        return Patronym;
     }
 
-    public void setPatronymic(String nickname) {
-        Nickname = nickname;
+    public void setPatronym(String patronym) {
+        Patronym = patronym;
     }
 
     public String getDate() {

@@ -13,6 +13,14 @@ public class RegexController {
     }
 
     public String RegexCheckInput(String message_type, String regex){
-        ;
+        view.printMessage(message_type);
+        String str;
+        str=inpt.nextLine();
+        while (!str.matches(regex)) {
+            view.printMessage(view.bd.getString("input.wrong.data"));
+            view.printMessage(message_type);
+            str = inpt.nextLine();
+        }
+        return str;
     }
 }
